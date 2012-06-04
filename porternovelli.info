@@ -1,0 +1,38 @@
+name = Porter Novelli
+description = This theme demonstrates Drupal's default HTML markup and CSS styles. To learn how to build your own theme and override Drupal's default code, see the <a href="http://drupal.org/theme-guide">Theming Guide</a>.
+package = Core
+version = VERSION
+core = 7.x
+
+; Information added by drupal.org packaging script on 2012-02-01
+version = "7.12"
+project = "drupal"
+datestamp = "1328134560"
+
+regions[sidebar_first]  = Left sidebar
+regions[sidebar_second] = Right sidebar
+regions[content] = Content
+regions[secondcontent] = Second content
+regions[header] = Header
+regions[footer] = Footer
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[page_top] = Page Top
+regions[page_bottom] = Page Bottom
+regions[nav_disciplines] = nav disciplines
+regions[nav_specialties] = nav specialties
+regions[frontpagenews] = Frontpage News
+regions[blogfeed] = Blogfeed
+
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+
+stylesheets[all][] = layout.css
+stylesheets[all][] = format.css
+ 

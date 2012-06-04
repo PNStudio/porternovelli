@@ -1,0 +1,800 @@
+/**
+ * @file
+ * Stark layout method
+ *
+ * To avoid obscuring CSS added to the page by Drupal or a contrib module, the
+ * Stark theme itself has no styling, except just enough CSS to arrange the page
+ * in a traditional "Header, sidebars, content, and footer" layout.
+ *
+ * This layout method works reasonably well, but shouldn't be used on a
+ * production site because it can break. For example, if an over-large image
+ * (one that is wider than 20% of the viewport) is in the left sidebar, the
+ * image will overlap with the #content to the right. The exception to this
+ * is IE6 which will just hide the navigation block completely in these
+ * instances due to a positioning bug. --- TEST JULIO -- NIEUWE TEST
+ */
+ 
+ 
+ body {
+	margin:0;
+	background-color:#1a1a1a;
+	overflow-x:hidden;
+}
+/*---typography---*/
+
+
+h1, h2, h3, h4, h5, h6 {
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "ff-din-web-pro-1", "ff-din-web-pro-2", Helvetica, Arial, sans-serif;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+}
+#page_body h1, #page_body h2, #page_body h3, #page_body h4, #page_body h5, #page_body h6, #page_body a {
+	color:#000;
+}
+p, li {
+	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1.5em;
+	color:#000;
+}
+ul {
+	margin-bottom: -5px;
+	margin-left: -25px;
+	margin-right: 0;
+	margin-top: -10px;
+}
+.normal {
+	font-weight: normal;
+}
+a:link, a:visited, a:hover, a:active {
+	font-family: "ff-din-web-pro-1", "ff-din-web-pro-2", Helvetica, Arial, sans-serif;
+	text-decoration:none;
+	border-bottom:1px dotted;
+	color:#FFFFFF;
+}
+h2, .feed-description {
+	font-size: 30px;
+	line-height: 36px;
+}
+h3 {
+	font-size: 18px;
+	line-height: 24px;
+}
+h3.big {
+	font-size: 22px;
+	line-height: 28px;
+}
+h3.region-sidebar-second {
+	border-bottom:2px solid #CCCCCC;
+}
+h4 {
+	font-size: 16px;
+	line-height: 20px;
+}
+.post_title a {
+	margin-bottom: 0;
+	font-size: 16px;
+	line-height: 20px;
+	color:#333333;
+}
+#nodetitle {
+	font-family: "ff-din-web-pro-1", "ff-din-web-pro-2", Helvetica, Arial, sans-serif;
+	font-size: 22px;
+	line-height: 28px;
+	color:#000;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "ff-din-web-pro-1", "ff-din-web-pro-2", Helvetica, Arial, sans-serif;
+	margin-bottom: 0px;
+	padding-bottom: 5px;
+}
+.title {
+/*color:#000;*/
+}
+#page-title {
+	margin:10px 10px 10px 0px;
+}
+.content {
+	color:#000000;
+}
+
+#overpagina a {
+	border-bottom:dotted 1px #F7F6F6;
+}
+.region-sidebar-second h3 {
+	color:#000000;
+}
+p a:link, p a:visited, p a:hover, p a:active {
+	color:#333333;
+}
+.black {
+	color:#000;
+}
+.link-niews-lijst a {
+	color:#999;
+	font-style:italic;
+	float:left;
+	margin-top:-5px;
+}
+.wit a {
+	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1.5em;
+	color:#F7F6F6;
+}
+/*---/typography---*/
+ 
+ /* HEADER */
+ 
+ #logo a {
+	border-bottom:none;
+}
+/* HEADER */
+
+
+ /* PRIMARY NAVIGATION */
+ 
+#navigation {
+	border-top: 1px solid #252525;
+	border-bottom: 1px solid #252525;
+	height:20px;
+	padding-top:5px;
+	padding-bottom:5px;
+	margin-top: 25px;
+}
+#navigation ul {
+	margin-bottom: 0;
+	margin-left: 10px;
+	margin-right: 0;
+	margin-top: 0;
+}
+#main-menu {
+	margin-top:30px;
+}
+#main-menu li {
+	list-style:none;
+	display:inline;
+	padding-right:30px;
+	font-family:"ff-din-web-pro-1", "ff-din-web-pro-2", Helvetica, Arial, sans-serif;
+	text-decoration:none;
+	font-size:14px;
+	font-weight:700;
+}
+#main-menu li a {
+	color:#fff;
+	text-decoration:none;
+	border:none;
+}
+#main-menu li a:hover {
+	color:#9f9f9f;
+	border-bottom:1px dotted;
+}
+/* END PRIMARY NAVIGATION */
+
+ 
+ 
+ /* SOCIAL ICONS 23 pixels per icon*/
+ul.social {
+	list-style:none;
+	float:right;
+	width:277px;
+	height:28px;
+	margin-top:-25px;
+}
+ul.social li {
+	margin:2px;
+	list-style:none;
+	float:right;
+}
+ul.social li a {
+	float:right;
+	background:url("/sites/all/themes/porternovelli/images/porter/socialsprite.png") 0 -25px no-repeat;
+}
+ul.social li, ul.social li a {
+	height:26px;
+	width:23px;
+	text-indent:-9999px;
+	border:none;
+}
+ul.social li.blog, ul.social li.blog a {
+	width:111px;
+}
+ul.social li.youtube a {
+	background-position:-111px -25px;
+}
+ul.social li.linkedin a {
+	background-position:-134px -25px;
+}
+ul.social li.twitter a {
+	background-position:-157px -25px;
+}
+ul.social li.fb a {
+	background-position:-180px -25px;
+}
+ul.social li.email a {
+	background-position:-203px -25px;
+}
+ul.social li.flickr a {
+	background-position:-226px -25px;
+}
+ul.social li.blog a {
+	background-position:0 -25px;
+}
+/* SOCIAL HOVER */
+ul.social li.youtube a:hover {
+	background-position:-111px 0;
+}
+ul.social li.linkedin a:hover {
+	background-position:-134px 0;
+}
+ul.social li.twitter a:hover {
+	background-position:-157px 0;
+}
+ul.social li.fb a:hover {
+	background-position:-180px 0;
+}
+ul.social li.email a:hover {
+	background-position:-203px 0;
+}
+ul.social li.flickr a:hover {
+	background-position:-226px 0;
+}
+ul.social li.blog a:hover {
+	background-position:0 0;
+}
+/* END SOCIAL HOVER */
+/* END SOCIAL ICONS */
+
+
+/*---HEADER---*/
+
+#header {
+	margin:0 auto;
+	padding-bottom: 15px;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 15px;
+	position: relative;
+    z-index: 100;
+	width: 960px;
+}
+
+#logo {
+	height:80px;
+	width:160px;
+	margin-top: 20px;
+}
+/*---/HEADER---*/
+	
+#content, #sidebar-first, #sidebar-second {
+	float: left;
+	display: inline;
+	position: relative;
+}
+#content {
+	width: 960px;
+}
+body.sidebar-first #content {
+	width: 800px;
+	left: 160px; /* LTR */
+}
+body.sidebar-second #content {
+	width: 800px;
+}
+body.two-sidebars #content {
+	width: 570px;
+	left: 160px;
+}
+#sidebar-first {
+	width: 160px;
+	left: -800px; /* LTR */
+}
+body.two-sidebars #sidebar-first {
+	left: -570px; /* LTR */
+}
+#sidebar-second {
+	float: right; /* LTR */
+	width: 230px;
+}
+.section {
+	margin: 10px;
+}
+#page {
+	margin: 0 auto;
+	width:960px;
+}
+#login {
+	float:left;
+	margin-bottom:0;
+}
+
+/* START HOME RULES */
+
+#page-title{
+	color: white;
+	margin-bottom: -54px;
+	margin-left: -160px;
+	margin-top: 30px;
+	border-bottom: solid 1px #ffffff;
+	width: 960px;
+}
+
+.homesupercontainer {
+	float:left;
+	margin-right:32px;
+	width:605px;
+}
+.homecontainer {
+	width:605px;
+	float:left;
+	height:363px;
+	margin-top:-30px;
+}
+div.home_btn {
+}
+div.home_btn a {
+	display:block;
+	float:left;
+	height:15px;
+	margin-right:10px;
+	text-indent:-9999px;
+	width:100px;
+	background:#333;
+	border:none;
+}
+div.home_btn a.current, div.home_btn a:hover {
+	background:#fff
+}
+.homecontainer h2 {
+	font-size:54px;
+	line-height:70px;
+	height:250px;
+	color:#F7F6F6
+}
+.homecontainer h3 {
+	font-size:40px;
+	font-weight:normal;
+	color:#F7F6F6
+}
+.columns {
+	width:100%;
+	float:left;
+	margin:0px 0 10px 0;
+}
+
+.onethird {
+	width:45%;
+	margin-right:5%;
+	float:left;
+	color:#f7f6f6;
+}
+.onethird.last {
+	margin-right:0;
+}
+.onethird p a.section {
+	float:right;
+	text-align:right;
+	color:#f7f6f6;
+}
+.onethird p {
+	color:#f7f6f6;
+}
+.onethird span {
+	float:left;
+}
+.onethird small {
+	font-size:11px;
+	font-weight:bold;
+	color:#f7f6f6;
+}
+/* OFFERINGS RULES */
+#leftcol {
+	width:790px;
+	float:left;
+}
+#leftcol h3 {
+	border-top:1px solid #f7f6f6;
+	padding-top:5px;
+	font-size:23px;
+	font-weight:normal;
+	padding-bottom:10px;
+}
+.panes {
+	background:#f7f6f6;
+	margin-left:156px;
+	min-height:370px;
+	padding:2px 25px 25px;
+	color:#000;
+}
+.item-list {
+	overflow:hidden;
+	list-style:none;
+}
+ul.tab_menu {
+	float:left;
+	width:160px;
+}
+.item-list ul a {
+	display:block;
+	float:left;
+	width:144px;
+	border-bottom:none;
+	font-size:14px;
+	font-weight:600;
+}
+.tabs a.active, .tabs a:hover {
+	background:url("/sites/all/themes/porternovelli/images/porter/nav_shadow.jpg") repeat-y right top #f7f6f6;
+	border-right:1px solid #ccc;
+	color:#000;
+}
+.tabs a {
+	padding:10px 0 10px 15px;
+}
+.tab_menu a {
+	font-family:"ff-din-web-pro-1", "ff-din-web-pro-2", "Arial", sans-serif;
+	text-decoration:none;
+}
+#practice {
+	padding-bottom:40px;
+}
+.item-list ul {
+	margin-bottom: 0;
+	margin-right: 0;
+	margin-top: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+}
+.item-list ul li {
+	list-style:none;
+	margin-bottom: 0.25em;
+	margin-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	width:160px;
+	margin-left: 0;
+}
+/* END OFFERINGS RULES */
+
+/*---content---*/
+
+.nodeprint {
+	color:#000000;
+	padding: 0 10px 0 10px;
+}
+#content-node {
+	color: black;
+	margin-top: 60px;
+	padding-bottom: 15px;
+	padding-right: 20px;
+	padding-top: 0;
+	min-height: 300px;
+	z-index:1000;
+	color: black;
+	margin-top: -10px;
+	min-height: 300px;
+	padding-bottom: 15px;
+	padding-right: 0;
+	padding-top: 0;
+	z-index: 1000;
+}
+#nodeprintwit, #nodeprintwit-margin-top {
+	background-color: #F7F6F6;
+	margin-top: 67px;
+	min-height: 370px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+}
+
+
+
+/*---/content---*/
+
+
+
+.panes {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #F7F6F6;
+	background-image: none;
+	background-origin: padding-box;
+	background-position: 0 0;
+	background-repeat: repeat;
+	background-size: auto auto;
+	color: #000000;
+	margin-left: 156px;
+	min-height: 370px;
+	padding-bottom: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 2px;
+}
+/*---SIDEBARS FIRST---*/
+.view-human-resource, .view-nieuws-sidebar {
+	margin-top:57px;
+}
+/*--- Sidebar second---*/
+
+#sidebar-second {
+	border-left:2px solid #CCCCCC;
+	padding-bottom: 0;
+	padding-left: 20px;
+	padding-right: 15px;
+	padding-top: 0;
+	width: 193px;
+	height:auto;
+}
+#sidebar-second {
+	background-color: #F7F6F6;
+	margin-top: 68px;
+}
+.sidebar-second, equalHeights {
+	height:auto;
+}
+/*---- DIENSTEN ---*/
+
+#main-wrapper-diensten-pagina {
+	color:#fff;
+    float: left;
+    height: 1270px;
+    margin-bottom: 80px;
+    margin-top: -10px;
+}
+#disciplines, #specialties {
+	border-top-color: #F7F6F6;
+	border-top-style: solid;
+	border-top-width: 1px;
+	float: left;
+	padding-bottom: 40px;
+	width:790px;
+}
+#disciplines {
+	margin-top: 0px;
+}
+#nav_disciplines, #nav_specialties {
+	float:left;
+	width:160px;
+}
+#disciplines_content, #specialties_content {
+	background-color: #FFFFFF;
+	float: left;
+	width: 590px;
+	padding:20px;
+	min-height:370px;
+	margin-top: 47px;
+}
+/*----NIEUWSLIJST---*/
+
+
+
+#nieuwslijst {
+	float:left;
+	background-color:#f7f6f6;
+	width:530px;
+	margin-top: 78px;
+	padding:20px;
+}
+#nieuws-item-list {
+	float:left;
+	padding-bottom:10px;
+	padding-top:10px;
+	width:410px;
+}
+#news_thumb {
+	float: left;
+	margin-left: 10px;
+	margin-right: -15px;
+	margin-top: 30px;
+	width: 100px;
+}
+#frontpage-image {
+	height:535px;
+	width:100%;
+	background-image:url(http://www.porternovelli.com/uploads/entry-uploads/feature_Spain.jpg);
+	background-color:#1a1a1a;
+	background-position:center top;
+	background-repeat:no-repeat;
+}
+/* TWITTER */
+.timeline {
+	background:url("http://www.porternovelli.com/images/porter/trans.png") repeat 0 0;
+	border:1px solid #555454;
+	width:271px;
+	float:left;
+	padding:0 10px;
+	height:376px;
+	margin-left: 30px;
+	margin-top:12px;
+}
+.timeline .tweettext {
+	float: left;
+}
+.timeline .tweettext h4 {
+	margin:0;
+	padding:0;
+}
+.timeline .tweetdate {
+	font-style:italic;
+}
+.timeline .tweet {
+	float:left;
+}
+.tw_logo {
+	float:left;
+	padding:12px 0;
+	width:100%
+}
+.tw_logo a img {
+	border:none;
+}
+.tw_logo a {
+	border:none;
+}
+/* END TWITTER */
+
+#frontpage{
+	height: 100%;
+    width: 100%;
+}
+
+
+#frontpage_news_image a {
+	border-bottom-width: 0px;
+}
+
+#frontpagebanner {
+    height: 535px;
+    left: 50%;
+    margin-left: -806px;
+    position: relative;
+    top: -465px;
+    width: 1612px;
+}
+.frontpage_title {
+	left: 50%;
+    margin-left: -848px;
+    position: relative;
+    top: 248px;
+	
+}
+.frontpage_title h2{
+	font-size: 54px;
+    height: 250px;
+    line-height: 70px;
+	color:#F7F6F6;	
+}
+
+.frontpage_leesverder {
+	left: 50%;
+    margin-left: -465px;
+    position: relative;
+    top: -235px;
+	z-index:1000;
+	font-size:20px;	
+	font-weight:normal;
+	font-style: italic;
+	color: #bc3636;
+}
+.frontpage_leesverder a{
+	color: rgba(255,255,255, 0.8);
+}
+	
+#second_frontpage_area {
+    clear: both;
+    display: block;
+    height: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -140px;
+    width: 960px;
+}
+
+#frontpagenews_items{
+	float:left;
+    width: 640px;
+	margin-bottom: 40px;
+}
+#blogfeed_wrapper{
+	float:left;
+	width:320px;
+}
+
+#frontpage_footer{
+	width:960px;
+	margin:0 auto;
+	clear:both;
+
+}
+
+#footer{
+	margin-top:50px;	
+}
+
+#block-menu-menu-secondairy ul{
+	text-decoration:none;	
+}
+
+#block-menu-menu-secondairy li {
+	list-style:none;
+	display:inline;
+	padding-right:30px;
+	font-family:"ff-din-web-pro-1", "ff-din-web-pro-2", Helvetica, Arial, sans-serif;
+	text-decoration:none;
+	font-size:10px;
+	font-weight:300;
+	
+}
+
+#block-menu-menu-secondairy ul{
+	padding-left:10px;	
+}
+
+#block-menu-menu-secondairy li a {
+	text-decoration:none;
+	color:#F7F6F6;	
+	border-bottom-style: none;
+}
+
+#block-menu-menu-secondairy li a.active {
+	text-decoration:none;
+	color:#999999;	
+	border-bottom-style: none;
+}
+
+#block-search-form{
+	float:right;
+	margin-right:20px;
+	margin-top: -15px;
+}	
+
+.search-results{
+	display:block;
+	background-color:#f7f6f6;
+	padding-top:10px;
+	padding-bottom:10px;
+	}
+	
+.title_search_results a{
+	color:#000;	
+}
+
+#aggregator, #aggregator-form-feed{
+	background-color:#fff;
+	padding:20px;
+		
+}
+
+#aggregator a{
+	color:#000;	
+}
+
+.feed-url a {
+	color:#000;	
+}
+#pager{
+	margin-top: 20px;
+	float: right;
+	width: 100%;
+}
+.pager li a{
+	color: #999999;
+	font-size: small;
+	font-weight: lighter;
+}
+#block-views-contact-sidebar-block-1, #block-views-human-resource-block-1{
+	margin-top: 68px;
+}
+
+#block-views-nieuws-sidebar-block-1{
+	padding-top: 11px;
+}
