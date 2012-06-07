@@ -9,6 +9,8 @@ version = "7.12"
 project = "drupal"
 datestamp = "1328134560"
 
+screenshot = images/porternovelli.png
+
 regions[sidebar_first]  = Left sidebar
 regions[sidebar_second] = Right sidebar
 regions[content] = Content
@@ -35,4 +37,7 @@ features[] = secondary_menu
 
 stylesheets[all][] = layout.css
 stylesheets[all][] = format.css
+
+scripts[] = js/active_link.js
+scripts[] = js/accordion.js
  

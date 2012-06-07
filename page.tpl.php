@@ -137,6 +137,7 @@
         </div>
         <!---/content-node---> 
         <!-- /.section, /#content -->
+        <div id="nav_disciplines"> <?php print render($page['nav_disciplines']); ?></div>
         <?php if ($page['sidebar_first']): ?>
         <div id="sidebar-first" class="column sidebar"> <?php print render($page['sidebar_first']); ?> </div>
         <!-- /.section, /#sidebar-first -->

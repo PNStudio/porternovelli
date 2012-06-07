@@ -65,10 +65,7 @@
 * @see template_process()
 */
 ?>
-<script type="text/javascript">var switchTo5x=true;</script>
-<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-<script type="text/javascript">stLight.options({publisher: "1af9b55b-0bce-4b5c-b0e3-9af347509526"}); </script>
-<script type="text/javascript" src="http://mrcoles.com/media/js/scroll-sneak.js"></script>
+
 
 <div id="page-wrapper">
   <div id="page">

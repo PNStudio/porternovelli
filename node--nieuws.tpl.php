@@ -90,4 +90,6 @@ if (isset($node->body['und'][0]['value'])) {
 <?php 
 foreach( $bestanden as $value) {echo $value; };
 ?>
+<div class="sharethis-buttons"> <?php print render($content['sharethis']['#value']); ?></div>
 </div>
+

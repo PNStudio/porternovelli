@@ -14,19 +14,30 @@ DESCRIPTION: This document contains the structural formatting files for the acco
 	}
 
 .accordionButton {	
-	width: 800px;
+	width: 770px;
 	float: left;
 	_float: none;  /* Float works in all browsers but IE6 */
-	background: #003366;
+	background: #F7F6F6;
 	border-bottom: 1px solid #FFFFFF;
 	cursor: pointer;
+	padding-top:5px;
+	padding-bottom:3px;
+	padding-left:15px;
+	padding-right:15px;
+	margin-top:0px;
+	font-size:16px;
 	}
 	
 .accordionContent {	
-	width: 800px;
+	width: 770px;
 	float: left;
 	_float: none; /* Float works in all browsers but IE6 */
-	background: #95B1CE;
+	background: #F7F6F6;
+	padding-top:0px;
+	padding-bottom:30px;
+	padding-left:15px;
+	padding-right:15px;
+	border-bottom:dotted 1px #999999;
 	}
 	
 /***********************************************************************************************************************
@@ -34,7 +45,8 @@ DESCRIPTION: This document contains the structural formatting files for the acco
 ************************************************************************************************************************/
 
 .on {
-	background: #990000;
+	background: #F37614;
+	color:#FFF;
 	}
 	
 .over {

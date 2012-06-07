@@ -663,7 +663,7 @@ ul.tab_menu {
 	left: 50%;
     margin-left: -848px;
     position: relative;
-    top: 248px;
+    top: 220px;
 	
 }
 .frontpage_title h2{
@@ -677,8 +677,8 @@ ul.tab_menu {
 	left: 50%;
     margin-left: -465px;
     position: relative;
-    top: -235px;
-	z-index:1000;
+    top: -260px;
+	z-index:0;
 	font-size:20px;	
 	font-weight:normal;
 	font-style: italic;
@@ -695,7 +695,7 @@ ul.tab_menu {
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -140px;
+    margin-top: -225px;
     width: 960px;
 }
 
@@ -707,6 +707,7 @@ ul.tab_menu {
 #blogfeed_wrapper{
 	float:left;
 	width:320px;
+	margin-top: 5px;
 }
 
 #frontpage_footer{
@@ -798,3 +799,42 @@ ul.tab_menu {
 #block-views-nieuws-sidebar-block-1{
 	padding-top: 11px;
 }
+
+.view-display-id-page{
+	margin-top:0px;	
+}
+
+#block-block-1{
+	margin-top:68px;	
+}
+
+.profile{
+	background-color:#F7F6F6;
+	padding:10px;
+	color:#333333;	
+}
+
+#user-login{
+	color:#F7F6F6;	
+}
+
+#block-sharethis-sharethis-block{
+	margin-bottom: 10px;
+	
+}
+.sharethis-wrapper{
+	padding-top: 10px;
+	padding-bottom: 5px;
+	margin-left: -4px;
+}
+
+.soc_med_frontpage{
+	
+}
+	
+.view-tweets {
+	color:black;
+}
+.view-tweets a{
+	color: #a0a0a0;
+}	

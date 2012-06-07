@@ -31,5 +31,6 @@
 
 <p><?php print $fields['body']->content;?></p>
 <div style="color:#f7f6f6; font-size:12px; font-weight:300;"><?php  print $fields['view_node']->content;?></div>
+<div class="soc_med_frontpage"><?php print $fields['sharethis']->content; ?></div>
 
 </div>

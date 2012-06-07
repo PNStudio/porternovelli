@@ -23,13 +23,6 @@
  * @ingroup views_templates
  */
 ?>
-<div id="news_thumb"><img src="/sites/all/themes/porternovelli/images/news_thumb.png" /></div>
-<div id="nieuws-item-list">
-<h4><?php print $fields['title']->content; ?></h4>
-<?php print $fields['body']->content;?>
-<p class="link-niews-lijst"><?php print $fields['view_node']->content;?></p>
 
-<?php print $fields['sharethis']->content; ?>
-
-
-</div>
+<div class="accordionButton"><?php print $fields['title']->content;?></div>
+<div class="accordionContent"><?php print $fields['body']->content; ?></div>
