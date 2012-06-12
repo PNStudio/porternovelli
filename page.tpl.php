@@ -67,6 +67,9 @@
 ?>
 
 <div id="page-wrapper">
+<div id="news-ticker">
+<?php if (function_exists('twitter_pull_render')) { print twitter_pull_render('#pnid', 'Twitter', 5); } ?>
+</div>
   <div id="page">
     <div id="header">
       <div id="logo">
@@ -135,7 +138,7 @@
             <?php endif; ?>
             <?php print render($page['content']); ?><?php print $feed_icons; ?> </div>
         </div>
-        <!---/content-node---> 
+        <!--/content-node--> 
         <!-- /.section, /#content -->
         <div id="nav_disciplines"> <?php print render($page['nav_disciplines']); ?></div>
         <?php if ($page['sidebar_first']): ?>

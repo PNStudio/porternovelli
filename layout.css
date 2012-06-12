@@ -580,7 +580,7 @@ ul.tab_menu {
 	float:left;
 	background-color:#f7f6f6;
 	width:530px;
-	margin-top: 78px;
+	margin-top: 48px;
 	padding:20px;
 }
 #nieuws-item-list {
@@ -808,10 +808,13 @@ ul.tab_menu {
 	margin-top:68px;	
 }
 
-.profile{
+.profile, .advanced-help-topic{
 	background-color:#F7F6F6;
 	padding:10px;
 	color:#333333;	
+}
+.help-up-noleft{
+	margin-top:10px;
 }
 
 #user-login{
@@ -837,4 +840,16 @@ ul.tab_menu {
 }
 .view-tweets a{
 	color: #a0a0a0;
+}
+
+#site-map{
+	color: #FFF;
+}
+
+#site-map h2 {
+	font-size: smaller;
+}
+
+#site-map li a, #site-map li a:active {
+	color: white;
 }	

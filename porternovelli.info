@@ -40,4 +40,6 @@ stylesheets[all][] = format.css
 
 scripts[] = js/active_link.js
 scripts[] = js/accordion.js
+scripts[] = js/jquery.newsTicker-2.3.6.js
+scripts[] = js/newstickercall.js
  
